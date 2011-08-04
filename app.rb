@@ -61,8 +61,8 @@ get '/mail' do
 	subj = "#{params[:subject]}}" 
 	body = params.inspect
 	Mail.deliver do
-		from 'callme@dmks.se'
-		to 'pablo@mon7.se'
+		from 'homepage@dmks.se'
+		to 'info@mon7.se'
 		subject subj
 		body body
 	end
