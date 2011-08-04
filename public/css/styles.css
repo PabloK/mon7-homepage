@@ -130,10 +130,43 @@ ul
 	margin: 20px;
 	margin-bottom: 0;
 }
-#contact p, #bd p
+#contact p, #bd p , #contact label, #bd label
 {
 	margin: 20px;
 	margin-top: 5px;
 	margin-bottom: 0;
 	line-height: 1.3em;
+}
+#contact_form
+{
+	margin-top: 1em;
+}
+#contact_form label
+{
+	width: 4em;
+	display: inline-block;
+}
+#contact_form input
+{
+	padding: 2px;
+	width: 16em;
+	display: inline-block;
+	border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	-webkit-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+#contact_form button
+{
+	padding: 0.5em;	
+	font-size: 15px;
+	font-weight: bold;
+	float:right; 
+	margin-right: 20px;
+	margin-top: 20px;
+	color: #444;
+}
+#contact_form button:hover
+{
+	color: #F53
 }

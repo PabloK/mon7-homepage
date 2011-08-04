@@ -40,10 +40,23 @@
             .twelvecol.last
               %h2 Fråga oss någonting...
               %p Undrar du hur vi kan hjälpa just dig, om våra priser eller hur vi kan anpassa DMKS för dina ända mål? Skicka oss dina uippgifter så hör vi av oss snart.
-
+              %form#contact_form
+                .field
+                  %label Namn:
+                  %input
+                .field
+                  %label Företag:
+                  %input
+                .field
+                  %label Telefon:
+                  %input
+                .field
+                  %button{:type => "submit"}
+                    Bli uppring!
     .container#ft
       .row
         .twelvecol
-          Utvecklat av 
-          %a{:href => 'http://www.mon7.se'}
-            Mon7 Consulting AB
+          %p 
+            Utvecklat av 
+            %a{:href => 'http://www.mon7.se'}
+              Mon7 Consulting AB
