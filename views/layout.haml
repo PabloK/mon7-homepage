@@ -51,6 +51,9 @@
                   %label Telefon:
                   %input{:name => "tel"}
                 .field
+                  %label E-post:
+                  %input{:name => "email"}
+                .field
                   %input{:type => "hidden",:name => "subject",:value => "[DMKS callme request]"}
                   %button{:type => "submit"}
                     Bli uppring!
@@ -64,7 +67,7 @@
                   rpp: 5,
                   interval: 6000,
                   width: 'auto',
-                  height: 295,
+                  height: 254,
                   theme: {
                     shell: {
                       background: '#cecece',

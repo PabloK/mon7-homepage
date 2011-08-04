@@ -173,6 +173,7 @@ button
 	float:right; 
 	margin-right: 20px;
 	margin-top: 20px;
+	margin-bottom: 20px;
 	color: #444;
 }
 button:hover
@@ -214,4 +215,8 @@ a:hover
 {
 	width: 22em;
 	margin-top: 1em;
+}
+#ft 
+{
+	margin-bottom: 20px;
 }
