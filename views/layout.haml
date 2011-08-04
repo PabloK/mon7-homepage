@@ -53,6 +53,39 @@
                 .field
                   %button{:type => "submit"}
                     Bli uppring!
+          .row
+            .twelvecol.last#twitter
+              %script{:src => "http://widgets.twimg.com/j/2/widget.js"}
+              :javascript
+                new TWTR.Widget({
+                  version: 2,
+                  type: 'profile',
+                  rpp: 5,
+                  interval: 6000,
+                  width: 'auto',
+                  height: 300,
+                  theme: {
+                    shell: {
+                      background: '#cecece',
+                      color: '#ff5533'
+                    },
+                    tweets: {
+                      background: '#ffffff',
+                      color: '#333',
+                      links: '#ff5533'
+                    }
+                  },
+                  features: {
+                    scrollbar: true,
+                    loop: true,
+                    live: true,
+                    hashtags: true,
+                    timestamp: false,
+                    avatars: false,
+                    behavior: 'default'
+                  }
+                }).render().setUser('dmks_mon7').start();
+
     .container#ft
       .row
         .twelvecol
