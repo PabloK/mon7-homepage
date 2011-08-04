@@ -133,7 +133,7 @@ ul
 #contact p, #bd p , #contact label, #bd label
 {
 	margin: 20px;
-	margin-top: 5px;
+	margin-top: 8px;
 	margin-bottom: 0;
 	line-height: 1.3em;
 }
@@ -179,4 +179,12 @@ ul
 	-webkit-box-shadow: 0px 3px 5px 1px #aaaaaa;
 	-moz-box-shadow: 0px 3px 5px 1px #aaaaaa;
 	box-shadow: 0px 3px 5px 1px #aaaaaa;
+}
+a
+{
+	color: #F53;
+}
+a:hover
+{
+	color: red;
 }

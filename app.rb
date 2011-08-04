@@ -56,6 +56,22 @@ get '/:page' do |page|
 	haml page.to_sym
 end
 
+get '/mail' do
+	subj = "[DMKS call me request] #{params[:company]}"
+	body = params.inspect
+	Mail.deliver do
+		from 'callme@dmks.se'
+		to 'info@mon7.se'
+		subject subj
+		body body
+	end
+	redirect '/mail_skickat'
+end
+
+get 'mail_skickat' do
+	haml :mail_skickat
+end
+
 not_found do
 	haml :not_found
 end

@@ -40,16 +40,16 @@
             .twelvecol.last
               %h2 Fråga oss någonting...
               %p Undrar du hur vi kan hjälpa just dig, om våra priser eller hur vi kan anpassa DMKS för dina ända mål? Skicka oss dina uippgifter så hör vi av oss snart.
-              %form#contact_form
+              %form#contact_form{:method => "GET", :action => "/mail"}
                 .field
                   %label Namn:
-                  %input
+                  %input{:name => "name"}
                 .field
                   %label Företag:
-                  %input
+                  %input{:name => "company"}
                 .field
                   %label Telefon:
-                  %input
+                  %input{:name => "tel"}
                 .field
                   %button{:type => "submit"}
                     Bli uppring!
@@ -63,7 +63,7 @@
                   rpp: 5,
                   interval: 6000,
                   width: 'auto',
-                  height: 300,
+                  height: 295,
                   theme: {
                     shell: {
                       background: '#cecece',
