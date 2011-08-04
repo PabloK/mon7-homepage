@@ -2,7 +2,19 @@
 %html
   %head
     %meta{:charset=>"utf-8"}
-    %title= @title
+    %title Dmks - Digitalt medlemskortsystem
+    %meta{:content => "Mon7.se", :name => "Author"}
+    %meta{:content => "Mon7", :name => "Publisher"}
+    %meta{:content => "Mon7", :name => "Copyright"}
+    %meta{:content => "5 days", :name => "Revisit-After"}
+    %meta{"HTTP-EQUIV" => "Expires", :content => "no-expire"}
+    %meta{:content => "medlems kortsystem,plastkort,medlems system,boknings system,medlemskort,plastkort,medlem,kortsystem, kort,VIP kort,besöksregistrering,besökssystem,aktiviteter,mjukvara,internetbaserat,molnbaserat,mon7", :name => "Keywords"}
+    %meta{:content => "Dmks - Digitalt medlemskort system är ett molnbaserat besöksregistrerings system anpassat för klubbar med olika aktiviteter. Systemet kan anpassas för att fungera med just din verksamhet.", :name => "Description"}
+    %meta{:content => "Software", :name => "Pagetopic"}
+    %meta{:content => "Produktinfo", :name => "Pagetype"}
+    %meta{:content => " All", :name => "Audience"}
+    %meta{:content => "INDEX,FOLLOW", :name => "Robots"}
+    %meta{:content => "Svenska, Swedish", :name => "Content-Language"}/
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
     %link{:href => "/css/1140.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}
     /[if lte IE 9]
@@ -12,18 +24,23 @@
   %body
     .container#hd
       .row
-        .fivecol
-          %h1 DMKS
-          .subtitle Medlemskort system för din organisation
-        .sevencol.last
+        .twelvecol.last
           %ul#menu
             -@menu.each do |path, name|
-              %li{:class => request.path == path ? :active : nil }
-                %a{:href => path}= name
-    .container#bd
-      .row
-        .twelvecol
-      !=yield
+              %li{}
+                %a.button{:class => request.path == path ? :active : nil, :href => path}= name
+    .container
+      .row.overflow
+        .eightcol
+          .row#bd
+            .twelvecol.last
+              !=yield
+        .fourcol.last
+          .row#contact
+            .twelvecol.last
+              %h2 Fråga oss någonting...
+              %p Undrar du hur vi kan hjälpa just dig, om våra priser eller hur vi kan anpassa DMKS för dina ända mål? Skicka oss dina uippgifter så hör vi av oss snart.
+
     .container#ft
       .row
         .twelvecol

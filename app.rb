@@ -38,6 +38,7 @@ before do
 		['/', 'DMKS'],
 		['/funktioner', 'Funktioner'],
 		['/anpassa', 'Anpassa'],
+		['/testa', 'Testa'],
 		['/faq', 'Frågor'],
 		['/kontakt', 'Kontakt'],
 	]
