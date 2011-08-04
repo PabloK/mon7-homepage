@@ -57,14 +57,16 @@ get '/:page' do |page|
 end
 
 get '/mail' do
-	subj = "[DMKS call me request] #{params[:company]}"
+	subj = "#{params[:subject]} #{params[:company]}" if params[:company]
+	subj = "#{params[:subject]}}" 
 	body = params.inspect
 	Mail.deliver do
 		from 'callme@dmks.se'
-		to 'info@mon7.se'
+		to 'pablo@mon7.se'
 		subject subj
 		body body
 	end
+	redirect '/felrapport_skickat' unless params[:company]
 	redirect '/mail_skickat'
 end
 

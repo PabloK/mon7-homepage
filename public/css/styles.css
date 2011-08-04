@@ -146,17 +146,18 @@ ul
 	width: 4em;
 	display: inline-block;
 }
-#contact_form input
+input, textarea
 {
 	padding: 2px;
 	width: 16em;
+	border: 2px inset #CCC;
 	display: inline-block;
 	border-radius: 3px 3px 3px 3px;
 	-moz-border-radius: 3px 3px 3px 3px;
 	-webkit-border-radius: 3px;
 	-webkit-border-radius: 3px;
 }
-#contact_form input:focus
+input:focus, textarea:focus
 {
 	border-color: #F53;
 	-webkit-box-shadow: 0px 0px 0px 0px #aaaaaa;
@@ -164,7 +165,7 @@ ul
 	box-shadow: 0px 0px 0px 0px #aaaaaa;
 	outline: 0;
 }
-#contact_form button
+button
 {
 	padding: 0.5em;	
 	font-size: 15px;
@@ -174,7 +175,7 @@ ul
 	margin-top: 20px;
 	color: #444;
 }
-#contact_form button:hover
+button:hover
 {
 	color: #F53
 }
@@ -195,4 +196,22 @@ a
 a:hover
 {
 	color: red;
+}
+#error_form label
+{
+	width: 4em;
+	display: inline-block;
+}
+#error_form textarea
+{
+	width: 25em;
+	min-height: 75px;
+	font-size: 12px;
+	font-family: Helvetica;
+	display: inline-block;
+}
+#error_form 
+{
+	width: 22em;
+	margin-top: 1em;
 }
