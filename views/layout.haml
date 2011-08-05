@@ -35,7 +35,7 @@
                 %a.button{:class => request.path == path ? :active : nil, :href => path}= name
     .container
       .row.overflow
-        .eightcol#bd.overflow
+        .eightcol#bd
           !=yield
         .fourcol.last
           .row#contact
