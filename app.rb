@@ -37,10 +37,10 @@ before do
 	@menu = [
 		['/', 'DMKS'],
 		['/funktioner', 'Funktioner'],
+		['/rundtur', 'Rundtur'],
 		['/anpassa', 'Anpassa'],
 		['/testa', 'Testa'],
 		['/faq', 'Frågor'],
-		['/kontakt', 'Kontakt'],
 	]
 end
 

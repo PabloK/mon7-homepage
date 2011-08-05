@@ -88,7 +88,7 @@ ul
 	-webkit-box-shadow: 0px 3px 5px 1px #aaaaaa;
 	-moz-box-shadow: 0px 3px 5px 1px #aaaaaa;
 	box-shadow: 0px 3px 5px 1px #aaaaaa;
-	padding-bottom: 20px
+	padding-bottom: 30px
 }
 #contact
 {
@@ -232,9 +232,12 @@ a:hover
 	color: #FFFFFF;
 	background-color: #46E;
 }
-li
+#funktioner li
 {
 	list-style: none;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	border-top: 2px solid #ACACAC;
 }
 .left
 {
@@ -248,4 +251,13 @@ li
 #funktioner li p
 {
 	margin-left: 104px;
+}
+.even
+{
+	color: white;
+	background-color: #F53;
+}
+.padd
+{
+	padding-bottom: 20px;
 }
