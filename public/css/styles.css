@@ -228,6 +228,11 @@ a:hover
 	max-height: 20em;
 	height: 20em;
 }
+#tour
+{
+	max-height: 50em;
+	height: 50em;
+}
 #medlem
 {
 	color: #FFFFFF;
