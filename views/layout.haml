@@ -25,6 +25,16 @@
     %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js", :type => "text/javascript"}
     %script{:src => "/js/slider/js/jquery.anythingslider.min.js"}
     %script{:src => "/js/init.js", :type => "text/javascript"}
+    %script{:async => "", :src => "http://www.google-analytics.com/ga.js", :type => "text/javascript"}  
+    :javascript
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-18633595-3']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
   %body
     .container#hd
       .row
@@ -41,7 +51,7 @@
           .row#contact
             .twelvecol.last
               %h2 Fråga oss någonting...
-              %p Undrar du hur vi kan hjälpa just dig, om våra priser eller hur vi kan anpassa DMKS för dina ända mål? Skicka oss dina uppgifter så hör vi av oss snart.
+              %p Undrar du hur vi kan hjälpa just dig, om våra priser eller hur vi kan anpassa DMKS för dina ändamål? Skicka oss dina uppgifter så hör vi av oss snart.
               %form#contact_form{:method => "GET", :action => "/mail"}
                 .field
                   %label Namn:

@@ -1,7 +1,7 @@
 .row
   .twelvecol
     %h2 Sidan kunde tyvärr inte hittas!
-    %p Sidan du letar efter är tyvärr inte tillgänglig på vår server längre. Förhoppnings vis kan du via denna sida hitta vad du söker. Om du inte hittar det du söker får du gärna kontakta oss via formuläret nedan och förklara närmare vad du letade efter.
+    %p Sidan du letar efter är tyvärr inte tillgänglig på vår server längre. Förhoppningsvis kan du via denna sida hitta vad du söker. Om du inte hittar det du söker får du gärna kontakta oss via formuläret nedan och förklara närmare vad du letade efter.
     %form#error_form{:method => "GET", :action => "/mail"}
       .field
         %label Namn:
@@ -15,5 +15,5 @@
           %textarea{:name => "body", :noresize => ""}
         %input{:type => "hidden",:name => "subject",:value => "[DMKS error report]"}
         %button{:type => "submit"}
-          Skicka fel rapport!
+          Skicka felrapport!
 
