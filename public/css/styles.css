@@ -237,6 +237,7 @@ a:hover
 #medlem
 {
 	color: #FFFFFF;
+	font-weight: bold;
 	background-image: url('/images/write.png');
 }
 #funktioner li
