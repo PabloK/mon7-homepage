@@ -1,25 +1,44 @@
 .row.overflow
   .twelvecol#holder.overflow
     %ul#banner
-      %li
+      %li#dmks-slide
         %h1 DMKS
         %h2 Digitalt medlemskortsystem 
-        %p DMKS är ett kortsystem för organisationer som hanterar besöksregistrering, medlemsregister, aktiviteter, statistik, medlemsutskick med mera.
+        %p DMKS är ett kortsystem för organisationer som hanterar besöksregistrering, medlemsregister, aktiviteter, statistik, medlemsutskick med mera. På denna sida hittar du information om DMKS, om du inte hittar det du söker tveka inte att ställa en fråga, vi svarar gärna!
       %li
         %h2 Beställ egendesignade plastkort!
         %p Du kan designa dina egna klubbkort. Vi trycker valfria medlemsuppgifter på korten och skickar dem till er på beställning.
+        %img#cards{:src => "/images/Cards.png"}
       %li#medlem
         %h2 Medlemsutskick
         %p Att göra medlemsutskick från DMKS är både enkelt och kraftfullt. Du kan med vårt verktyg välja ut specifika grupper bland dina medlemmar. Utskicken kan sedan göras via till expempel email eller sms.
-      %li
+      %li#stat-slide
         %h2 Statistik
         %p Du kan enkelt hålla reda på antalet besökare under olika perioder med det inbyggda statistiksystemet. Här kan du snabbt och enkelt få en översikt över hur många besök du haft under en viss period. Det går även att dela in statistiken i olika kategorier baserat på till exempel aktiviteter eller medlemsegenskaper. 
-      %li
-        %h2 Medlemsidor
-        %p Varje medlem kan se sin bonus och hantera sina uppgifter och inställningar via medlemssidorna.
-.row
-  .twelvecol#func
-    %h2 Funktioner
+        %img#stat-img{:src => "/images/stat.png"}
+%a.nohover{:href => "/funktioner"}
+  .row
+    .twelvecol#func
+      %h2 Funktioner
+      %ul#firstpage-funktioner
+        %li
+          %img{:width => 32, :src => "/images/icons/user.png", :alt => "Medlemsregistrering"}
+          %h4 Medlemsregistrering
+        %li
+          %img{:width => 32,:src => "/images/icons/visit.png", :alt => "Besöksregistrering"}
+          %h4 Besöksregistrering
+        %li
+          %img{:width => 32,:src => "/images/icons/card.png", :alt => "Medlemskort"}
+          %h4 Medlemsanpassade kort
+        %li
+          %img{:width => 32,:src => "/images/icons/webb.png", :alt => "webbaserat"}
+          %h4 Webbaserat
+        %li
+          %img{:width => 32,:src => "/images/icons/mail.png", :alt => "Utskick"}
+          %h4 Medlemsutskick
+        %li
+          %img{:width => 32,:src => "/images/icons/statistics.png", :alt => "Statistik"}
+          %h4 Statistik
 .row
   .twelvecol#customers
     %h2 Våra kunder

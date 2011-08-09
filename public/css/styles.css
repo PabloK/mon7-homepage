@@ -24,6 +24,7 @@ ul
  padding: 0;
  font-size: 1em;
  font-family: arial;
+ list-style: none;
 }
 
 #menu li
@@ -236,7 +237,7 @@ a:hover
 #medlem
 {
 	color: #FFFFFF;
-	background-color: #46E;
+	background-image: url('/images/write.png');
 }
 #funktioner li
 {
@@ -304,4 +305,52 @@ a:hover
 	padding: 0;
 	position: relative;
 	left: -0px;
+}
+#cards
+{
+position: relative;
+top: -50px;
+left: 325px;
+width: 499px;
+}
+#dmks-logo-2
+{
+	float:left;
+	margin: 20px;
+}
+#stat-slide
+{
+	background-color: #d2f6f6;
+}
+#dmks-slide
+{
+	color: #444;
+}
+#stat-img{
+	float:right;
+	position: relative;
+	top: -30px;
+}#firstpage-funktioner
+{
+	margin: 20px;
+}#firstpage-funktioner li
+{
+width: 33%;
+}
+#firstpage-funktioner li, #firstpage-funktioner li img, #firstpage-funktioner li h4
+{
+	display: inline-block;	
+}
+#firstpage-funktioner h4
+{
+	margin: 3px;
+}
+#firstpage-funktioner li img
+{
+	position: relative;
+	top: 10px;
+}
+a.nohover:hover
+{
+	text-decoration: none;
 }
