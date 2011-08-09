@@ -18,7 +18,7 @@ body {
 }
 ul
 {
- margin-top: 4em;
+ margin-top: 1em;
  margin-left: 0;
  margin-right: 0;
  padding: 0;
@@ -275,4 +275,33 @@ a:hover
 .question
 {
 	font-size: 16px;
+}
+#imglogo
+{
+	padding: 0;
+	margin: 0;
+	float: left;
+	position: relative;
+	top: -2px;
+	width: 95px;
+	left: -10px;
+}
+#logo
+{
+	color: #000;
+	font-family: Arial;
+	font-size: 48px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	left: -5px;
+}
+#slogan
+{
+	color: #F53;
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	left: -0px;
 }
