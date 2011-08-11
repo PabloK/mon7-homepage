@@ -351,3 +351,7 @@ a.nohover:hover
 {
 	text-decoration: none;
 }
+#ft
+{
+	display: block;
+}
