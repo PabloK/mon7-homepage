@@ -107,7 +107,7 @@ ul
 }
 .overflow
 {
-	overflow: hidden;
+	overflow: visible;
 }
 #banner
 {
