@@ -355,11 +355,3 @@ a.nohover:hover
 {
 	display: block;
 }
-.container
-{
-	overflow: hidden;
-}
-.row
-{
-	overflow: visible;
-}

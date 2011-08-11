@@ -48,7 +48,7 @@
             -@menu.each do |path, name|
               %li{}
                 %a.button{:class => request.path == path ? :active : nil, :href => path}= name
-    .container
+    .container.overflow
       .row
         .eightcol#bd
           !=yield
