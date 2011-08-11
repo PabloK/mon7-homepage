@@ -4,7 +4,7 @@
 
 body {
 	background: whiteSmoke url(/images/crosses.png);
-	font-family: Helvetica, arial;
+	font-family: 'Droid Sans', Tahoma, arial, sans-serif;
 	color: #444;
 	overflow-y: scroll;
 }
@@ -23,7 +23,6 @@ ul
  margin-right: 0;
  padding: 0;
  font-size: 1em;
- font-family: arial;
  list-style: none;
 }
 
@@ -59,7 +58,6 @@ ul
 	color: #666;
 	font-weight: bold;
 	font-size: 1em;
-	font-family: arial;
 }
 #menu a.button:hover
 {
@@ -211,7 +209,6 @@ a:hover
 	width: 25em;
 	min-height: 75px;
 	font-size: 12px;
-	font-family: Helvetica;
 	display: inline-block;
 	margin-left: 0px;
 }
@@ -290,8 +287,7 @@ a:hover
 #logo
 {
 	color: #000;
-	font-family: Arial;
-	font-size: 48px;
+	font-size: 46px;
 	margin: 0;
 	padding: 0;
 	position: relative;
