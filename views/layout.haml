@@ -37,7 +37,7 @@
       })();
   %body
     .container#hd
-      .row
+      .row.overflow
         .eightcol.last
           %img#imglogo{:src => "/images/dmks-logo.png"}
           %h1#logo Digitalt medlemskortsystem
@@ -48,8 +48,8 @@
             -@menu.each do |path, name|
               %li{}
                 %a.button{:class => request.path == path ? :active : nil, :href => path}= name
-    .container.overflow
-      .row
+    .container
+      .row.overflow
         .eightcol#bd
           !=yield
         .fourcol.last
