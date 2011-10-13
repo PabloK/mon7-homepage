@@ -33,14 +33,12 @@ end
 
 before do 
 	content_type :html, :charset => 'utf-8'
-	@title = "DMKS - Digitalt medlems kort system"
+	@title = "Mon7 Consulting"
 	@menu = [
-		['/', 'DMKS'],
-		['/funktioner', 'Funktioner'],
-		['/rundtur', 'Rundtur'],
-		['/anpassa', 'Anpassa'],
-		['/testa', 'Testa'],
-		['/faq', 'Frågor'],
+		['/', 'Mon7 Consulting'],
+		['/tjanster', 'Tjänster'],
+		['/projekt', 'Tidigare projekt'],
+		['/kontakt', 'Kontakt'],
 	]
 end
 
@@ -61,7 +59,7 @@ get '/mail' do
 	subj = "#{params[:subject]}}" 
 	body = params.inspect
 	Mail.deliver do
-		from 'homepage@dmks.se'
+		from 'homepage@mon7.se'
 		to 'info@mon7.se'
 		subject subj
 		body body
