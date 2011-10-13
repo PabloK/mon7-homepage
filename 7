@@ -1,17 +1,12 @@
 /* ============================== */
 /* ! Layout for desktop version   */
 /* ============================== */
-@font-face { font-family: Ubuntu; src: url('/fonts/Ubuntu-Medium.ttf'); }
 
 body {
 	background: whiteSmoke url(/images/7.png);
-	font-family: 'Ubuntu', arial, sans-serif;
+	font-family: 'Droid Sans', Tahoma, arial, sans-serif;
 	color: #444;
 	overflow-y: scroll;
-}
-p
-{
-	font-family: Arial, sans-serif;
 }
 #hd
 {
@@ -109,16 +104,12 @@ menu a.button.active
 }
 #banner
 {
+	background-image: url('/images/mon7office.png');
 	min-height: 20em;
 }
-#mon7
+#func
 {
-	background-image: url('/images/mon7office.png');
-  text-shadow: #333 2px 2px 0px;
-  color: #fff;
-}
-#valkommen
-{
+	min-height: 13em;
 	border-top: 2px solid #CCC;
 	border-bottom: 2px solid #CCC;
 	background-color: #005AAA;
@@ -254,6 +245,10 @@ a:hover
 	margin: 20px;
 	margin-top: 0px;
 }
+#funktioner li p
+{
+	margin-left: 104px;
+}
 .even
 {
 	color: white;
@@ -274,9 +269,7 @@ a:hover
 }
 #imglogo
 {
-  width: 60%;
-  position: relative;
-  left: -10%;
+  width: 50%;
   margin-bottom: 2em;
 }
 #logo
@@ -320,13 +313,4 @@ a.nohover:hover
 }
 #ft{
   margin-bottom: 2em;
-}
-#bd p.adress
-{
-  margin-bottom: 0;
-  margin-top: 0;
-}
-#bd .contact label
-{
-  width: auto;
 }

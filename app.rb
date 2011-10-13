@@ -7,8 +7,7 @@ set :haml, :format => :html5, :escape_html => true
 
 configure :production do 
 	before do 
-		#redirect "http://www.sekura.nu#{request.path}", 301 if request.host != 'www.sekura.nu'
-		#cache_control :public, :max_age => 24*3600 
+		cache_control :public, :max_age => 24*3600 
 		Mail.defaults do
 			delivery_method :smtp, { 
 				:address        => "smtp.sendgrid.net",
@@ -36,8 +35,8 @@ before do
 	@title = "Mon7 Consulting"
 	@menu = [
 		['/', 'Mon7 Consulting'],
-		['/tjanster', 'Tjänster'],
 		['/projekt', 'Tidigare projekt'],
+		['/tjanster', 'Tjänster'],
 		['/kontakt', 'Kontakt'],
 	]
 end

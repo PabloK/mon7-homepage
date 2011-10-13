@@ -1,24 +1,36 @@
 .row
   .twelvecol.padd
-    %h2 Prova på DMKS gratis!
-    %p Vi på Mon7 vill att du ska veta vad du får för dina pengar, vi låter dig gärna testa DMKS. Var dock medveten om att då du beställer kan vi om du vill anpassa systemet efter just dina behov.
+    %h2 Kontakta oss
+    %p.adress Mon 7 Consulting AB
+    %p.adress
+      Telefon: +46 70 367 11 20
+    %p.adress
+      Besöksadress: Westmansgatan 37 2 tr, 582 16 Linköping
+    %p.adress
+      Orgnr. 556724-0782
 .row
   .twelvecol.even
-    %h3 Anmäl dig för att testa DMKS...
-    %p Fyll i formuläret nedan så ringer vi upp dig när vi startat ett testkonto. I testkontot kan du pröva hela DMKS under en begränsad period. Under testtiden går det att skapa men inte att skicka utskick.
+    %h3 Med arbetare
+    %p Söker du en särskilld medarbetare? Här hittar du våra personliga telefonummer och emailadresser.
     %form#error_form{:method => "GET", :action => "/mail"}
-      .field
-        %label Namn:
-        %input{:name => "name"}
-      .field
-        %label Företag:
-        %input{:name => "company"}
-      .field
-        %label Telefon:
-        %input{:name => "tel"}
-      .field
-        %label E-post:
-        %input{:name => "email"}
-        %input{:type => "hidden",:name => "subject",:value => "[DMKS demo request]"}
-        %button{:type => "submit"}
-          Ansök om testkonto!
+      .contact
+        %label Staffan Hörberg - VD
+        %p.adress Telefon: +46703671120
+        %p.adress email: staffan@mon7.se
+      .contact
+        %label Carl Hörberg - Systemutvecklare
+        %p.adress Telefon: +46702270833
+        %p.adress email: carl@mon7.se
+      .contact
+        %label Magnus Hörberg - Systemutvecklare
+        %p.adress Telefon: +46738123954
+        %p.adress email: magnus@mon7.se
+      .contact
+        %label Martin Andersson - Systemutvecklare
+        %p.adress Telefon: +46704565865
+        %p.adress email: martin@mon7.se
+      .contact
+        %label Hans Jansson - Systemutvecklare
+        %p.adress Telefon: +46703671120
+        %p.adress email: hasse@mon7.se
+      %p
