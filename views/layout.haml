@@ -2,7 +2,7 @@
 %html
   %head
     %meta{:charset=>"utf-8"}
-    %title DMKS - Digitalt medlemskortsystem
+    %title= @title
     %meta{:content => "Mon7.se", :name => "Author"}
     %meta{:content => "Mon7", :name => "Publisher"}
     %meta{:content => "Mon7", :name => "Copyright"}
@@ -70,7 +70,7 @@
                   %label E-post:
                   %input{:name => "email"}
                 .field
-                  %input{:type => "hidden",:name => "subject",:value => "[DMKS callme request]"}
+                  %input{:type => "hidden",:name => "subject",:value => "[Mon7 callme request]"}
                   %button{:type => "submit"}
                     Kontakta mig!
     .line-break

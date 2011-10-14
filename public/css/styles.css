@@ -330,3 +330,25 @@ a.nohover:hover
 {
   width: auto;
 }
+#agile
+{
+	background-image: url('/images/agile.png');
+  color: #005AAA;
+}
+#agile p
+{
+  color: #333;
+}
+#scale
+{
+	background-image: url('/images/scale.png');
+  color: #fff;
+  text-shadow: #000 1px 1px 0px;
+}
+#cloud
+{
+	background-image: url('/images/cloud.png');
+  color: #fff;
+  font-weight: bold;
+  text-shadow: #000 1px 1px 0px;
+}
