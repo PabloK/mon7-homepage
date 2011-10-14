@@ -369,9 +369,24 @@ a.nohover:hover
   margin-bottom: 0;
   margin-top: 0;
 }
-#bd .contact label
+#bd .contact
 {
-  width: auto;
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+}
+#bd .contact .name
+{
+  font-weight: bold;
+}
+img.contact-img 
+{
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 100px;
+  clear: left;
+  float: left;
+  border: solid 2px #333;
 }
 #agile
 {

@@ -11,25 +11,26 @@
 .row
   .twelvecol.even
     %h3 Medarbetare
-    %form#error_form{:method => "GET", :action => "/mail"}
-      .contact
-        %label Staffan Hörberg - VD
-        %p.adress Telefon: +4670 3671120
-        %p.adress email: staffan@mon7.se
-      .contact
-        %label Carl Hörberg - Systemutvecklare
-        %p.adress Telefon: +4670 2270833
-        %p.adress email: carl@mon7.se
-      .contact
-        %label Magnus Hörberg - Systemutvecklare
-        %p.adress Telefon: +4673 8123954
-        %p.adress email: magnus@mon7.se
-      .contact
-        %label Martin Andersson - Systemutvecklare
-        %p.adress Telefon: +4670 4565865
-        %p.adress email: martin@mon7.se
-      .contact
-        %label Hans Jansson - Systemutvecklare
-        %p.adress Telefon: +4670 79827087
-        %p.adress email: hasse@mon7.se
-      %p
+    .contact
+      %p.name Staffan Hörberg - VD
+      %p.adress Telefon: +4670 3671120
+      %p.adress email: staffan@mon7.se
+    .contact
+      %p.name Carl Hörberg - Systemutvecklare
+      %p.adress Telefon: +4670 2270833
+      %p.adress email: carl@mon7.se
+    .contact
+      %p.name Magnus Hörberg - Systemutvecklare
+      %p.adress Telefon: +4673 8123954
+      %p.adress email: magnus@mon7.se
+    .contact
+      %img.contact-img{:src => "/images/staff/martin.JPG"}
+      %p.name Martin Andersson - Systemutvecklare
+      %p.adress Telefon: +4670 4565865
+      %p.adress email: martin@mon7.se
+    .contact
+      %img.contact-img{:src => "/images/staff/hasse.JPG"}
+      %p.name Hans Jansson - Systemutvecklare
+      %p.adress Telefon: +4670 79827087
+      %p.adress email: hasse@mon7.se
+    %p
