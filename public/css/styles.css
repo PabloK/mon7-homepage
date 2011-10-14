@@ -300,7 +300,7 @@ a:hover
 .even
 {
 	color: white;
-	background-color: #005AAA;
+	background-color: #333;
 }
 .padd
 {
@@ -386,7 +386,10 @@ img.contact-img
   width: 100px;
   clear: left;
   float: left;
-  border: solid 2px #333;
+  border: solid 2px #fff;
+  -moz-box-shadow: 2px 2px 4px #222;
+  -webkit-box-shadow: 2px 2px 4px #222;
+  box-shadow: 2px 2px 4px #222;
 }
 #agile
 {
